@@ -9,7 +9,7 @@ namespace Pause_teller
 {
     unsafe class Teller
     {
-        public long Telop(long seconds, long millisecondsjesus, long lastseconds, bool telop)
+        public long Tel_op(long seconds, long millisecondsjesus, long lastseconds, bool telop)
         {
             long millisecondsjesus2 = DateTime.Now.Ticks;
             long ticks = millisecondsjesus2 - millisecondsjesus;

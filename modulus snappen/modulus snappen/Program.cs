@@ -26,7 +26,7 @@ namespace Pause_teller
                 tel = aanuit.Switch(tel);
                 if (tel == true)
                 {
-                    seconds = teller.Telop(seconds, millisecondsjesus, lastseconds, telop);
+                    seconds = teller.Tel_op(seconds, millisecondsjesus, lastseconds, telop);
                     if (seconds != lastseconds)
                     {
                         timer++;
