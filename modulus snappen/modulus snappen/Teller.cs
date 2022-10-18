@@ -9,16 +9,12 @@ namespace Pause_teller
 {
     unsafe class Teller
     {
-        public int Tel(int timer, long ticks)
+        public long Telop(long seconds, long millisecondsjesus, long lastseconds, bool telop)
         {
-            long seconds = ticks / TimeSpan.TicksPerSecond;
-            if (seconds % 1 == 0)
-            {
-                timer++;
-                Console.WriteLine(timer);
-            }
-
-            return timer;
+            long millisecondsjesus2 = DateTime.Now.Ticks;
+            long ticks = millisecondsjesus2 - millisecondsjesus;
+            seconds = ticks / TimeSpan.TicksPerSecond;
+            return seconds;
         }
     }
 }
